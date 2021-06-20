@@ -22,7 +22,6 @@ if not game:IsLoaded() then
 	loadedcheck:Destroy()
 end
 
-wait(3)
 game:GetService("StarterGui"):SetCore(
 "SendNotification",
 {
