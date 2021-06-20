@@ -21,6 +21,8 @@ if not game:IsLoaded() then
 	game.Loaded:Wait(14)
 	loadedcheck:Destroy()
 end
+
+wait(3)
 game:GetService("StarterGui"):SetCore(
 "SendNotification",
 {
