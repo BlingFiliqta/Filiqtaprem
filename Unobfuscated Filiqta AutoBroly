@@ -25,8 +25,8 @@ end
 game:GetService("StarterGui"):SetCore(
 "SendNotification",
 {
-	Title = "Filiqta 💯💥Premium",
-	Text = "By Filiqta 💯💥"
+	Title = "Filiqta Premium",
+	Text = "By Filiqta"
 }
 )
 local plr = game.Players.LocalPlayer
@@ -35,7 +35,7 @@ game.Workspace.Live:WaitForChild(plr.Name)
 game:GetService("RunService").RenderStepped:connect(
 function()
 	game:GetService("Players").LocalPlayer.PlayerGui.HUD.Bottom.SP.Visible = true
-	game:GetService("Players").LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = "Made By Filiqta 💯💥"
+	game:GetService("Players").LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = "Made By Filiqta "
 end
 )
 
