@@ -39,9 +39,11 @@ function()
 	game:GetService("Players").LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = "Made By Filiqta 💯💥"
 end
 )
+
 if game.PlaceId == 536102540 then
 	game:GetService("TeleportService"):Teleport(3565304751)
 end
+
 
 function Twn(HRP, Place, Length)
 	local Twn =
@@ -70,7 +72,9 @@ if game.PlaceId == 3565304751 then
 	Twn(Char.HumanoidRootPart, pad.PrimaryPart.CFrame, 1)
 	wait(45)
 	game:GetService("TeleportService"):Teleport(3565304751)
+	
 elseif game.PlaceId == 2050207304 then
+wait(3)
 	local B = Live:WaitForChild("Broly BR")
 	local plr = game.Players.LocalPlayer
 	
