@@ -1,13 +1,14 @@
+
 Move1 = "Anger Rush"
 Move2 = "TS Molotov"
 Move3 = "Deadly Dance"
-Move4 = "Sudden Storm"
-Move5 = "Demon Flash"
-Move6 = "Big Bang Kamehameha"
-Move7 = "Blaster Meteor"
+Move4 = "Vital Strike"
+Move5 = "Flash Skewer"
+Move6 = "Wolf Fang Fist"
+Move7 = "Neo Wolf Fang Fist"
 Move8 = "Meteor Crash"
-Move9 = ""
-Move10 = ""
+Move9 = "Demon Flash"
+Move10 = "Big Bang Kamehameha"
 
 autohit = true -- wont hit whilst ki low if false
 antileech = true
@@ -128,7 +129,8 @@ wait(3)
 	Twn(Char.HumanoidRootPart, B.HumanoidRootPart.CFrame, 0.2)
 	game:GetService("RunService").RenderStepped:connect(function()
 		Char.Humanoid:ChangeState(11)
-
+game.Workspace.CurrentCamera.CFrame =
+                    CFrame.new(Char.HumanoidRootPart.Position, B.HumanoidRootPart.Position) * CFrame.new(0, 2, 10)
 		if Char:FindFirstChild("Attacking") then
 			Char.Attacking:Destroy()
 		end
