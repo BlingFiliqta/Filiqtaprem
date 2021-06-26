@@ -1,21 +1,3 @@
-
-Move1 = "Anger Rush"
-Move2 = "TS Molotov"
-Move3 = "Deadly Dance"
-Move4 = "Vital Strike"
-Move5 = "Flash Skewer"
-Move6 = "Wolf Fang Fist"
-Move7 = "Neo Wolf Fang Fist"
-Move8 = "Meteor Crash"
-Move9 = "Demon Flash"
-Move10 = "Big Bang Kamehameha"
-
-autohit = true -- wont hit whilst ki low if false
-antileech = true
-forms = true --wont form if set false
-autostats = true
-stat = "Ki-Damage" --[[ Phys-Resist, Ki-Max, Health-Max, Ki-Resist, Ki-Damage, Speed; all stats ]]--
-
 if not game:IsLoaded() then
 	local loadedcheck = Instance.new("Message", workspace)
 	loadedcheck.Text = "Loading..."
@@ -70,7 +52,7 @@ if game.PlaceId == 3565304751 then
 	local pad = Pads[math.random(1, 7)]
 	print(pad.Name)
 	Twn(Char.HumanoidRootPart, pad.PrimaryPart.CFrame, 1)
-	wait(45)
+	wait(25)
 	game:GetService("TeleportService"):Teleport(3565304751)
 	
 elseif game.PlaceId == 2050207304 then
