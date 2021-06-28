@@ -108,6 +108,8 @@ wait(3)
 
 	--[[ Forms ]] --
 
+
+
 	Twn(Char.HumanoidRootPart, B.HumanoidRootPart.CFrame, 0.2)
 	game:GetService("RunService").RenderStepped:connect(function()
 		Char.Humanoid:ChangeState(11)
@@ -179,9 +181,22 @@ game.Workspace.CurrentCamera.CFrame =
 	Char["Dragon Crush"]:Deactivate()
 	Char["Dragon Crush"].Parent = game.Players.LocalPlayer.Backpack
 	wait(1)
+
+	
 	repeat
-		game.Workspace.Live['Broly BR'].LowerTorso.Anchored =
-			game.Workspace.Live['Broly BR'].UpperTorso.Anchored
+	game:GetService("Workspace").Live["Broly BR"].LowerTorso.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].UpperTorso.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].LeftUpperLeg.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].LeftLowerLeg.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].RightUpperLeg.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].RightLowerLeg.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].Head.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].RightUpperArm.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].RightLowerArm.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].LeftUpperArm.Anchored = true
+game:GetService("Workspace").Live["Broly BR"].LeftLowerArm.Anchored = true
+	
+	
 		game:GetService("RunService").RenderStepped:Wait()
 		for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 			if
